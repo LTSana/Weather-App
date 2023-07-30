@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/date_format"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:id="@+id/timestamp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/date"
+                android:text="@string/date_time_format"
+                android:gravity="center"
+                android:textSize="60sp"
+                />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_below="@id/timestamp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/location_name"
+                android:gravity="center"
+                android:textSize="20sp"
+                />
+
+            <ImageView
+                android:id="@+id/weatherIcon"
+                android:layout_below="@id/location"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:src="@drawable/sunny_icon"
+                />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_below="@id/weatherIcon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center"
+                >
+
+                <View
+                    android:layout_width="160dp"
+                    android:layout_height="10dp"
+                    android:padding="10dp"
+                    android:background="@xml/shape"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/digress"
+                android:layout_below="@id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/digress"
+                android:gravity="center"
+                android:textSize="70sp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="date_format">N/A</string>
+    <string name="date_time_format">N/A</string>
+    <string name="location_name">N/A</string>
+    <string name="digress">N/A</string>
+</resources>
